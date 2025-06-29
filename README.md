@@ -1,7 +1,3 @@
-Here’s a **README-ready** version of your ongoing internship project description, structured with clarity and professionalism:
-
----
-
 # 🤖 Robotic Co. – Full-Stack MERN Robotics + E-Commerce Web App *(Ongoing Internship)*
 
 This project is a full-stack web application that merges an e-commerce platform with real-time 3D robot simulation and control. Developed as part of an ongoing internship, it integrates modern web technologies to provide a unique interactive robotics experience through both UI and gesture-based control.
