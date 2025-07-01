@@ -1,0 +1,880 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: white;
+    color: #0072ff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* ABOUT SECTION */
+.about-us-section {
+    padding: 60px 20px;
+    background-color: #f0f0f5;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1 1 60%;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1 1 35%;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* BLOG SECTION */
+.blog-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-card h3 {
+    padding: 16px;
+    font-size: 1.2rem;
+}
+
+.blog-card p {
+    padding: 0 16px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.read-more {
+    display: block;
+    padding: 16px;
+    color: #0072ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* SERVICES SECTION */
+.services-section {
+    padding: 60px 20px;
+    background-color: #f9f9ff;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* FOOTER */
+.footer-contact {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-buttons {
+    margin: 20px 0;
+}
+
+.social-btn {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.social-btn:hover {
+    color: #00c6ff;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #111;
+    color: white;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00c6ff;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn.login {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn.signup {
+    background-color: #00c6ff;
+    color: white;
+}
+
+.btn.logout {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#welcome-user {
+    font-weight: 600;
+    color: #00c6ff;
+}
+
+#cart-count {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* PASSWORD TOGGLE STYLING */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+    /* Room for eye icon */
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* FORM CONTAINER STYLING */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container form button {
+    width: 100%;
+    background-color: #28a745;
+    /* Green button */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-container form button:hover {
+    background-color: #218838;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* === Products Page === */
+.products-page-intro {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.products-page-intro h2 {
+    font-size: 2rem;
+    color: #222;
+}
+
+.category-filter-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.category-btn {
+    padding: 8px 16px;
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.masonry-products {
+    padding: 2rem;
+}
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.masonry-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.masonry-item:hover {
+    transform: translateY(-4px);
+}
+
+.masonry-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.masonry-item h3 {
+    margin: 0.75rem 0 0.25rem;
+}
+
+.masonry-item .price {
+    color: #27ae60;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.masonry-item button {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.category-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+/* === Side Cart Modal === */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    /* Start off-screen */
+    width: 350px;
+    max-width: 90vw;
+    /* To ensure it fits on very small screens */
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.cart-modal.open {
+    right: 0;
+}
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9998;
+    display: none;
+    /* Hidden by default */
+}
+
+.cart-modal.open .cart-overlay {
+    display: none;
+    /* Shown when cart is open */
+}
+
+.cart-content {
+    padding: 1.5rem;
+}
+
+.cart-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.cart-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-content li {
+    margin-bottom: 10px;
+}
+
+.cart-footer {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.cart-footer button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.close-cart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+}
+
+/* === Footer === */
+footer.contact {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 1rem 0;
+}
+
+.social-btn {
+    color: white;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    color: #00b894;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+
+/* === Responsive Adjustments for Navbar === */
+/* Hamburger menu button - hidden by default on large screens */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1001;
+    /* Ensure it's above other elements */
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 999;
+    /* Below the sidebar, above main content */
+    display: none;
+    /* Hidden by default */
+}
+
+/* Media Query for smaller screens (max-width 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        /* Revert flex-direction to row to align logo and hamburger */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        /* Slightly less padding */
+    }
+
+    .navbar .nav-links {
+        /* Sidebar styling */
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* Start off-screen to the left */
+        width: 250px;
+        /* Width of the sidebar */
+        max-width: 80vw;
+        /* Max width for very small screens */
+        height: 100%;
+        background-color: #1a1a2e;
+        /* Same as navbar background */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 1.5rem;
+        transform: translateX(-100%);
+        /* Initially hide it off-screen */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        /* Ensure it's on top */
+    }
+
+    .navbar .nav-links.open {
+        transform: translateX(0);
+        /* Slide in when 'open' class is applied */
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+        /* More spacing for vertical links */
+        width: 100%;
+        /* Make list items take full width */
+    }
+
+    .navbar .nav-links a,
+    .navbar .nav-links .btn {
+        width: 100%;
+        /* Make links and buttons take full width */
+        text-align: left;
+        padding: 10px 0;
+        /* Adjust padding for full-width links */
+    }
+
+    .navbar .btn.login,
+    .navbar .btn.signup,
+    .navbar .btn.logout {
+        display: block;
+        /* Ensure buttons behave as blocks */
+    }
+
+    .navbar .nav-links .welcome-user {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+
+    /* Show the hamburger menu icon */
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Show the overlay when the sidebar is open */
+    .sidebar-overlay {
+        display: none;
+    }
+
+    /* === Other responsive adjustments === */
+    .masonry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-modal {
+        width: 100%;
+    }
+}
+
+.payment-success-body {
+    background-color: #e6ffe6;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.payment-success-container {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-success-container h1 {
+    color: #28a745;
+    margin-bottom: 16px;
+}
+
+.payment-success-container a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.payment-cancelled-body {
+    background-color: #ffe6e6;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.payment-cancelled-container {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-cancelled-container h1 {
+    color: #dc3545;
+    margin-bottom: 16px;
+}
+
+.payment-cancelled-container a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.robot-iframe {
+    width: 100%;
+    height: 600px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+#services-section,
+#blog-section,
+#contact {
+    scroll-margin-top: 100px;
+    /* Adjust based on your navbar height */
+}
+
+/* Custom Message Box Styles */
+.message-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 10000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: fadeInOut 5s forwards;
+    /* Fade in and out */
+}
+
+.message-box.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message-box.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+}
+
+/* Additional Cart Item Styling for better readability */
+.cart-item-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.cart-item-detail:last-child {
+    border-bottom: none;
+}
+
+.remove-from-cart-btn {
+    background: #dc3545 !important;
+    /* Override button style */
+    color: white !important;
+    border: none !important;
+    padding: 5px 10px !important;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+    font-weight: normal !important;
+    margin-left: 10px;
+    /* Ensure spacing */
+}
+
+.remove-from-cart-btn:hover {
+    background: #c82333 !important;
+}
+
+/* Style for disabled buttons */
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Fallback image styling (for when image not found) */
+.masonry-item img {
+    display: block;
+}
+
+@tailwind utilities;
+/* Ensure this is present and processed by Tailwind */
+
+@layer utilities {
+    .scrollbar-thin {
+        scrollbar-width: thin;
+    }
+
+    /* This targets the thumb. The track is usually the background of the element itself. */
+    .scrollbar-thumb-gray-600 {
+        scrollbar-color: #4b5563 transparent;
+        /* Thumb color, then track color */
+    }
+
+    /* If you want a specific track color, you'd adjust scrollbar-color: */
+    /* .scrollbar-thumb-gray-600-track-gray-800 {
+         scrollbar-color: #4b5563 #1f2937;
+     } */
+}
+
+/* Tailwind-compatible custom scrollbar using ::-webkit-scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    /* gray-600 */
+    border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: #6b7280;
+    /* gray-500 */
+}
+
+/* In your src/index.css or a global stylesheet */
+.sidebar-always-scroll {
+    overflow-y: scroll;
+}
